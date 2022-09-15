@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Investment calculator</title>
 </head>
 <body>
-    
+    <form>
+        <h2>Investment Calculator</h2>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter monthly Amount">
+        <label for="years">Years for</label>
+        <input type="number" id="years" placeholder="Enter year">
+        <label for="returns">Return rate</label>
+        <input type="number" min="0" max="100" id="returns" placeholder="Enter retrun rate">
+        <button id="btn">Calculate</button>
+        <input type="text" disabled  id="output" placeholder="result">
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
